@@ -1,0 +1,60 @@
+
+.tetris-window {
+  max-width: 520px;
+  margin: 0 auto;
+  background-color: var(--teal-dark, #275252);
+  border: 3px solid var(--border-pixel, #193638);
+  box-shadow: 6px 6px 0px var(--border-pixel, #193638);
+}
+
+.tetris-game-body {
+  display: flex;
+  gap: 1.5rem;
+  padding: 1.2rem;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+#tetris-canvas {
+  background-color: #122829;
+  border: 3px solid var(--border-pixel, #193638);
+  image-rendering: pixelated;
+}
+
+.tetris-sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  min-width: 160px;
+}
+
+.tetris-score-box {
+  background-color: #122829;
+  border: 2px solid var(--border-pixel, #193638);
+  padding: 0.5rem;
+  text-align: center;
+}
+
+.score-label {
+  display: block;
+  font-family: var(--font-code, monospace);
+  font-size: 0.75rem;
+  color: var(--bg-mint, #88c9a1);
+}
+
+#tetris-score, #tetris-lines {
+  font-family: 'Press Start 2P', monospace;
+  font-size: 1.1rem;
+  color: var(--yellow-cream, #fce18a);
+}
+
+.tetris-controls-info {
+  font-family: var(--font-code, monospace);
+  font-size: 0.75rem;
+  color: #a8d5ba;
+  line-height: 1.4;
+  background: rgba(0,0,0,0.2);
+  padding: 0.6rem;
+  border: 1px dashed var(--border-pixel, #193638);
+}

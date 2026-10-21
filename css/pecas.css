@@ -1,0 +1,62 @@
+.tetris-piece {
+  position: absolute;
+  display: grid;
+  gap: 3px;
+  opacity: 0.85;
+  z-index: 1;
+  pointer-events: none;
+  animation: floatTetris 2.8s ease-in-out infinite alternate;
+  margin: 50px;
+}
+
+.tetris-piece span {
+  width: 22px;
+  height: 22px;
+  border: 3px solid #193638;
+  box-shadow: inset -3px -3px 0px rgba(0,0,0,0.25);
+  display: block;
+}
+
+.piece-i {
+  top: 10%;
+  left: 2%;
+  grid-template-columns: repeat(4, 1fr);
+  transform: rotate(-15deg);
+}
+.piece-i span { background-color: var(--coral); }
+
+.piece-l {
+  bottom: 8%;
+  left: 3%;
+  grid-template-columns: repeat(2, 1fr);
+  transform: rotate(10deg);
+  animation-delay: -2s;
+}
+.piece-l span { background-color: var(--yellow-cream); }
+
+.piece-t {
+  top: 8%;
+  right: 4%;
+  grid-template-columns: repeat(3, 1fr);
+  transform: rotate(25deg);
+  animation-delay: -3.5s;
+}
+.piece-t span { background-color: var(--teal-dark); }
+
+.piece-z {
+  bottom: 12%;
+  right: 2%;
+  grid-template-columns: repeat(3, 1fr);
+  transform: rotate(-20deg);
+  animation-delay: -1s;
+}
+.piece-z span { background-color: var(--coral); }
+
+@keyframes floatTetris {
+  0% {
+    transform: translateY(0px) rotate(var(--rot, 0deg));
+  }
+  100% {
+    transform: translateY(-12px) rotate(var(--rot, 0deg));
+  }
+}
