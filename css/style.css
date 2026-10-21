@@ -973,4 +973,8 @@ body {
   .tetris-piece {
     display: none !important;
   }
+
+  .nav-links {
+    display: none !important;
+  }
 }
