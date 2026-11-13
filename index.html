@@ -1,486 +1,321 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Henriwue.php</title>
-
-  <link rel="icon" type="image/x-icon" href="img/favicon.ico">
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/tetris.css">  
-  <link rel="stylesheet" href="css/pecas.css">
-  <link rel="stylesheet" href="css/animacao.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Plus+Jakarta+Sans:wght@400;600;700;800&family=JetBrains+Mono:wght@400;600;700&display=swap" rel="stylesheet">
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1" name="viewport"/>
+  <meta content="#0a2736" name="theme-color"/>
+  <meta content="Portfólio de Henrique Viana, desenvolvedor Full Stack especializado em aplicações web, PHP, Laravel, JavaScript e Python. Disponível para projetos e freelas." name="description"/>
+  <title>Henrique Viana — Desenvolvedor Full Stack</title>
+  <link href="https://fonts.googleapis.com" rel="preconnect"/>
+  <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&amp;family=Space+Grotesk:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+  <link href="style.css" rel="stylesheet"/>
+  <link rel="icon" type="ico" href="favicon.ico">
+  <script defer="" src="script.js"></script>
 </head>
 <body>
+  <div aria-hidden="true" class="noise"></div>
+  <div aria-hidden="true" class="cursor-aura"></div>
+  <div aria-hidden="true" class="scroll-progress"></div>
 
-  <nav class="navbar">
-    <a href="#" class="nav-logo">
-      <span>&#9632;</span> HENRIWUE.DEV
-    </a>
-    <ul class="nav-links">
-      <li><a href="#about">Sobre</a></li>
-      <li><a href="#skills">Skills</a></li>
-      <li><a href="#projects">Projetos</a></li>
-      <li><a href="#education">Trajetória</a></li>
-    </ul>
-  </nav>
+  <div class="topline"><span>✧</span> PROIBIDO ALIMENTAR O DEV <span>✧</span></div>
 
-  <main class="container">
+  <header class="header" id="inicio">
+    <a class="brand" href="#inicio"><span class="brand-mark">✳</span> henriwue<span class="brand-end">.dev</span></a>
+    <button aria-controls="navigation" aria-expanded="false" aria-label="Abrir menu" class="menu-button">☰</button>
+    <nav class="nav" id="navigation">
+      <a href="#sobre">sobre</a>
+      <a href="#projetos">projetos</a>
+      <a href="#habilidades">habilidades</a>
+      <a href="#formacao">formação</a>
+      <a class="nav-cta" href="#contato">vamos conversar ↗</a>
+    </nav>
+  </header>
 
-    <section id="about" class="hero-section">
-      <div class="tetris-piece piece-i" style="--rot: -15deg;">
-        <span></span><span></span><span></span><span></span>
-      </div>
+  <main>
+    <section aria-labelledby="hero-title" class="hero">
+      <div aria-hidden="true" class="hero-grid"></div>
+      <div class="hero-copy reveal">
+        <div class="availability">DISPONÍVEL PARA PROJETOS E FREELAS ✦</div>
+        <div class="hero-small">OLÁ, VIAJANTE! <span>↗</span> BEM-VINDO AO MEU ESPAÇO</div>
+        <h1 id="hero-title">Ideias que<br/><em>ganham</em><br/><span class="outline">vida.</span><span class="title-star">✳</span></h1>
+        <p class="hero-description">Sou <strong>Henrique Viana</strong>, desenvolvedor Full Stack com foco em aplicações web. Transformo ideias em sistemas funcionais, combinando <strong>PHP, JavaScript, criatividade e tecnologia.</strong></p>
+        <div class="hero-actions">
+          
+          <a class="button primary" href="https://github.com/henriwueViana" target="_blank" rel="noopener noreferrer">
+              explorar projetos <span>↗</span>
+          </a>
 
-      <div class="tetris-piece piece-l" style="--rot: 10deg;">
-        <span></span><span style="visibility:hidden;"></span>
-        <span></span><span style="visibility:hidden;"></span>
-        <span></span><span></span>
-      </div>
+          <a class="button secondary" href="docs/curriculo.pdf" target="_blank" rel="noopener noreferrer">
+              baixar currículo ↗
+          </a>
 
-      <div class="tetris-piece piece-t" style="--rot: 25deg;">
-        <span></span><span></span><span></span>
-        <span style="visibility:hidden;"></span><span></span><span style="visibility:hidden;"></span>
-      </div>
-
-      <div class="tetris-piece piece-z" style="--rot: -20deg;">
-        <span></span><span></span><span style="visibility:hidden;"></span>
-        <span style="visibility:hidden;"></span><span></span><span></span>
-      </div>
-      
-      <div class="hero-content">
-        <div class="pixel-badge">
-          <span class="blink"></span> Status: Disponível para Projetos
         </div>
-        <h1 class="hero-title">Eai, eu sou o <span>Henriwue</span>!</h1>
-        <p class="hero-subtitle">
-          Desenvolvedor Full Stack focado em aplicações web, com especial afinidade por PHP e JavaScript. Meu objetivo é criar produtos digitais funcionais, com interfaces únicas e personalidade própria.
-
-          Um diferencial? Não preciso de um. Eu sou o diferencial. 
-        </p>
-        <div class="hero-buttons">
-          <a href="docs/curriculo.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-primary">► Baixar CV</a>
-          <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">GitHub ↗</a>
+        <div class="hero-aside">
+          <span>EST. 2026</span>
+          <span>FULL STACK + DESIGN</span>
+          <span>BRASIL ↗</span>
         </div>
       </div>
 
-      <div class="hero-avatar-container">
-        <div class="speech-bubble">
-          <p>Esse sou eu, é que meu celular é muito antigo</p>
-        </div>
-
-        <div class="speech-bubble bubble-bottom">
-          <p>Câmera horrível</p>
-        </div>
-  
-        <div class="avatar-card">
-          <div class="avatar">
-            <img src="img/3x4.jpeg" alt="profile">
-          </div>
-          <div class="avatar-caption">
-            [MODE: CODING]<br>
-            SANITY_CHECK = FAILED
-          </div>
-        </div>
+      <div class="hero-scene reveal" id="hero-scene">
+        <div class="scene-halo halo-one"></div>
+        <div class="scene-halo halo-two"></div>
+        <div aria-hidden="true" class="scene-stars">✧ <span>✦</span> ✧</div>
+        <img alt="narval" class="narval" src="img/narval.svg" width="500"/>
+        <div class="scene-orbit orbit-a">✧</div>
+        <div class="scene-orbit orbit-b">✳</div>
+        <div class="scene-label"><span>✦</span> ENTRE NO MEU UNIVERSO <span>001 / ∞</span></div>
       </div>
+      <div class="hero-bottom">DESÇA PARA EXPLORAR <span>↓</span></div>
     </section>
 
-    <section id="skills" class="section">
-      <h2 class="section-title">Minhas Ferramentas</h2>
-      <p class="section-desc">Tecnologias que utilizo para construir soluções robustas de ponta a ponta:</p>
-
-      <div class="skills-grid">
-        
-        <div class="skill-card">
-          <div class="skill-header">
-            <div class="window-dots">
-              <span class="dot dot-red"></span>
-              <span class="dot dot-yellow"></span>
-              <span class="dot dot-green"></span>
-            </div>
-            <span class="project-type-tag">FRONTEND</span>
-          </div>
-
-          <div class="tech-tags-list">
-            <span class="tech-tag">HTML5</span>
-            <span class="tech-tag">CSS3</span>
-            <span class="tech-tag">JavaScript (ES6+)</span>
-            <span class="tech-tag">TypeScript</span>
-            <span class="tech-tag">React</span>
-            <span class="tech-tag">Vite</span>
-            <span class="tech-tag">Tailwind CSS</span>
-            <span class="tech-tag">TanStack Query</span>
-            <span class="tech-tag">Zustand</span>
-            <span class="tech-tag">React Router</span>
-            <span class="tech-tag">Axios</span>
-            <span class="tech-tag">Sass</span>
-            <span class="tech-tag">Livewire</span>
-            <span class="tech-tag">Figma</span>
-            <span class="tech-tag">UI Design</span>
-          </div>
-        </div>
-
-        <div class="skill-card">
-          <div class="skill-header">
-            <div class="window-dots">
-              <span class="dot dot-red"></span>
-              <span class="dot dot-yellow"></span>
-              <span class="dot dot-green"></span>
-            </div>
-            <span class="project-type-tag">BACKEND</span>
-          </div>
-
-          <div class="tech-tags-list">
-            <span class="tech-tag">PHP</span>
-            <span class="tech-tag">Laravel</span>
-            <span class="tech-tag">Python</span>
-            <span class="tech-tag">FastAPI</span>
-            <span class="tech-tag">SQLAlchemy</span>
-            <span class="tech-tag">Alembic</span>
-            <span class="tech-tag">Pydantic</span>
-            <span class="tech-tag">Node.js</span>
-            <span class="tech-tag">Java</span>
-            <span class="tech-tag">C / C++ / C#</span>
-            <span class="tech-tag">Flutter / Dart</span>
-            <span class="tech-tag">RESTful APIs</span>
-            <span class="tech-tag">JWT</span>
-            <span class="tech-tag">RBAC</span>
-            <span class="tech-tag">Google Gemini API</span>
-            <span class="tech-tag">Integração com LLMs</span>
-            <span class="tech-tag">Automação de Processos</span>
-          </div>
-        </div>
-
-        <div class="skill-card">
-          <div class="skill-header">
-            <div class="window-dots">
-              <span class="dot dot-red"></span>
-              <span class="dot dot-yellow"></span>
-              <span class="dot dot-green"></span>
-            </div>
-            <span class="project-type-tag">DATABASE</span>
-          </div>
-
-          <div class="tech-tags-list">
-            <span class="tech-tag">PostgreSQL</span>
-            <span class="tech-tag">MySQL</span>
-            <span class="tech-tag">MariaDB</span>
-            <span class="tech-tag">Firebase</span>
-            <span class="tech-tag">Redis</span>
-            <span class="tech-tag">SQL</span>
-            <span class="tech-tag">Modelagem Relacional</span>
-            <span class="tech-tag">Migrations</span>
-            <span class="tech-tag">ORM</span>
-          </div>
-        </div>
-
-        <div class="skill-card">
-          <div class="skill-header">
-            <div class="window-dots">
-              <span class="dot dot-red"></span>
-              <span class="dot dot-yellow"></span>
-              <span class="dot dot-green"></span>
-            </div>
-            <span class="project-type-tag">DEVOPS & TESTING</span>
-          </div>
-
-          <div class="tech-tags-list">
-            <span class="tech-tag">Git</span>
-            <span class="tech-tag">GitHub</span>
-            <span class="tech-tag">Linux</span>
-            <span class="tech-tag">Fedora</span>
-            <span class="tech-tag">Docker</span>
-            <span class="tech-tag">Docker Compose</span>
-            <span class="tech-tag">VS Code</span>
-            <span class="tech-tag">Postman</span>
-            <span class="tech-tag">Composer</span>
-            <span class="tech-tag">Pytest</span>
-            <span class="tech-tag">Testes Automatizados</span>
-            <span class="tech-tag">Testes de API</span>
-            <span class="tech-tag">Testes Funcionais</span>
-            <span class="tech-tag">CI/CD</span>
-            <span class="tech-tag">GitHub Copilot</span>
-          </div>
-        </div>
-
-      </div>
-    </section>
-
-    <section id="projects" class="section">
-      <h2 class="section-title">Projetos em Destaque</h2>
-      <p class="section-desc">Seleção de sistemas e aplicações que desenvolvi do zero:</p>
-
-      <div class="projects-grid">
-        
-
-        <article class="project-card">
-        <div class="project-header-bar">
-          <div class="window-dots">
-            <span class="dot dot-red"></span>
-            <span class="dot dot-yellow"></span>
-            <span class="dot dot-green"></span>
-          </div>
-          <span class="project-type-tag">AUVREN.APP</span>
-        </div>
-
-        <div class="project-preview">
-          <img
-            src="img/auvren.png"
-            alt="Preview do dashboard do Auvren"
-          >
-        </div>
-
-        <div class="project-body">
-          <h3 class="project-title">Auvren</h3>
-
-          <p class="project-desc">
-            Plataforma de gestão de chamados com inteligência artificial
-            para triagem automatizada, controle de acesso por perfis,
-            acompanhamento de solicitações e dashboards de atendimento.
-          </p>
-
-          <div class="tech-tags">
-            <span class="tag">Python</span>
-            <span class="tag">FastAPI</span>
-            <span class="tag">React</span>
-            <span class="tag">TypeScript</span>
-            <span class="tag">PostgreSQL</span>
-            <span class="tag">Gemini AI</span>
-            <span class="tag">Docker</span>
-          </div>
-
-          <div class="project-links">
-            <a
-              href="https://github.com/henriwueViana/Auvren"
-              target="_blank"
-              rel="noopener noreferrer"
-              class="project-link"
-            >
-              ► Repositório ↗
-            </a>
-          </div>
-        </div>
-      </article>
-      
-        <article class="project-card">
-          <div class="project-header-bar">
-            <div class="window-dots">
-              <span class="dot dot-red"></span>
-              <span class="dot dot-yellow"></span>
-              <span class="dot dot-green"></span>
-            </div>
-            <span class="project-type-tag">KITCHO_SAAS.PHP</span>
-          </div>
-
-          <div class="project-preview">
-            <img src="img/kitcho.png" alt="Preview Kitcho SaaS">
-          </div>
-
-          <div class="project-body">
-            <h3 class="project-title">Kitcho SaaS</h3>
-            <p class="project-desc">
-              Sistema de gestão de cardápios e pedidos em tempo real voltado para restaurantes e estabelecimentos.
-            </p>
-            <div class="tech-tags">
-              <span class="tag">Laravel</span>
-              <span class="tag">PostgreSQL</span>
-              <span class="tag">Node.js</span>
-            </div>
-            <div class="project-links">
-              <a href="https://github.com/henriwueViana/kitcho-saas.git" target="_blank" rel="noopener noreferrer" class="project-link">► Repositório ↗</a>
-            </div>
-          </div>
-        </article>
-
-        <article class="project-card">
-          <div class="project-header-bar">
-            <div class="window-dots">
-              <span class="dot dot-red"></span>
-              <span class="dot dot-yellow"></span>
-              <span class="dot dot-green"></span>
-            </div>
-            <span class="project-type-tag">COMPARTILHE.EXE</span>
-          </div>
-
-          <div class="project-preview">
-            <img src="img/blat.png" alt="Preview ComPartilhe">
-          </div>
-
-          <div class="project-body">
-            <h3 class="project-title">ComPartilhe</h3>
-            <p class="project-desc">
-              Plataforma web para gestão de feiras de trocas, moeda social e doações desenvolvida como TCC no IFPR.
-            </p>
-            <div class="tech-tags">
-              <span class="tag">Laravel</span>
-              <span class="tag">PHP</span>
-              <span class="tag">MySQL</span>
-              <span class="tag">Tailwind</span>
-            </div>
-            <div class="project-links">
-              <a href="https://github.com/henriwueViana/compartilhe-tcc.git" target="_blank" rel="noopener noreferrer" class="project-link">► Repositório ↗</a>
-            </div>
-          </div>
-        </article>
-
-        
-      
-
-
-      </div>
-
-      <div class="contact-cta-card">
-        <div class="project-header-bar">
-          <div class="window-dots">
-            <span class="dot dot-red"></span>
-            <span class="dot dot-yellow"></span>
-            <span class="dot dot-green"></span>
-          </div>
-          <span class="project-type-tag">NEW_PROJECT.SYS</span>
-        </div>
-
-        <div class="contact-cta-body">
-          <div class="contact-cta-content">
-            <h3 class="contact-cta-title">Precisa de uma landing page ou aplicação sob medida?</h3>
-            <p class="contact-cta-desc">
-              Tenho disponibilidade para novos projetos freelancers, sistemas web e consultorias. Vamos transformar sua ideia em realidade!
-            </p>
-          </div>
-
-          <div class="contact-buttons-grid">
-            <a href="https://wa.me/55041996465348" target="_blank" rel="noopener noreferrer" class="btn-contact btn-whatsapp">
-              <i class="devicon-whatsapp-plain"></i> WhatsApp ↗
-            </a>
-            <a href="mailto:alexandreh4564@gmail.com" class="btn-contact btn-gmail">
-              Gmail ↗
-            </a>
-            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="btn-contact btn-instagram">
-              Instagram ↗
-            </a>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="education" class="section">
-      <h2 class="section-title">Trajetória Acadêmica</h2>
-      <p class="section-desc">Minha jornada de formação técnica e acadêmica:</p>
-
-      <div class="timeline">
-        
-        <div class="timeline-item">
-          <div class="timeline-marker"></div>
-          <div class="timeline-box">
-            <span class="timeline-date">[ 2026 — CURSANDO ]</span>
-            <h3 class="timeline-title">Bacharelado em Engenharia de Software</h3>
-            <p class="timeline-inst">UniCesumar</p>
-            <p class="timeline-desc">
-              Estudo aprofundado em arquitetura de software, engenharia de requisitos, testes automatizados, governança de TI e sistemas distribuídos.
-            </p>
-          </div>
-        </div>
-
-        <div class="timeline-item">
-          <div class="timeline-marker"></div>
-          <div class="timeline-box">
-            <span class="timeline-date">[ ENCERRADO 2023 ]</span>
-            <h3 class="timeline-title">Técnico em Informática Integrado</h3>
-            <p class="timeline-inst">Instituto Federal (IFPR)</p>
-            <p class="timeline-desc">
-              Formação de base sólida em lógica de programação, algoritmos, redes de computadores, suporte técnico e desenvolvimento do projeto final web.
-            </p>
-          </div>
-        </div>
-
-      </div>
-    </section>
-
-    <section id="tetris-game-section" class="section">
-      <h2 class="section-title">Easter Egg: Quebre o Recorde!</h2>
-      <p class="section-desc">Eu sei, eu sei. Você já cançou de ler... Então vamos jogar:</p>
-
-      <div class="tetris-window">
-        <div class="project-header-bar">
-          <div class="window-dots">
-            <span class="dot dot-red"></span>
-            <span class="dot dot-yellow"></span>
-            <span class="dot dot-green"></span>
-          </div>
-          <span class="project-type-tag">TETRIS_GAME.EXE</span>
-        </div>
-
-        <div class="tetris-game-body">
-          <canvas id="tetris-canvas" width="240" height="400"></canvas>
-
-          <div class="tetris-sidebar">
-            <div class="tetris-score-box">
-              <span class="score-label">PONTOS</span>
-              <span id="tetris-score">0000</span>
-            </div>
-
-            <div class="tetris-score-box">
-              <span class="score-label">LINHAS</span>
-              <span id="tetris-lines">0</span>
-            </div>
-
-            <div class="tetris-controls-info">
-              <p><strong>CONTROLES:</strong></p>
-              <p>◄ ► : Mover</p>
-              <p>▲ : Girar</p>
-              <p>▼ : Acelerar</p>
-            </div>
-
-            <button id="tetris-start-btn" class="btn btn-primary">► JOGAR</button>
-          </div>
-        </div>
-      </div>
-    </section>
-
-  </main>
-
-  <footer class="footer">
-    <div class="container">
-      <div class="footer-window">
-        
-        <div class="footer-header-bar">
-          <div class="window-dots">
-            <span class="dot dot-red"></span>
-            <span class="dot dot-yellow"></span>
-            <span class="dot dot-green"></span>
-          </div>
-          <span class="project-type-tag">SYSTEM_INFO.LOG</span>
-        </div>
-
-        <div class="footer-body">
-          <div class="footer-left">
-            <p><span>></span> STATUS: <span class="status-online">ONLINE & READY</span></p>
-            <p>© <span id="year"></span> Henrique Viana (Henriwue). Todos os direitos reservados.</p>
-          </div>
-
-          <div class="footer-socials">
-            <a href="https://github.com/henriwueViana" target="_blank" rel="noopener noreferrer" class="footer-link">GitHub</a>
-            <a href="https://www.linkedin.com/in/henrique-viana-440356444/" target="_blank" rel="noopener noreferrer" class="footer-link">LinkedIn</a>
-            <a href="mailto:alexandreh4564@gmail.com" class="footer-link">Email</a>
-          </div>
-        </div>
-
-        <div class="footer-footer-bar">
-          <div class="palette-bar-container">
-            <span class="palette-label">PALETTE:</span>
-            <div class="color-stripe-bar" title="Mint | Teal Dark | Teal Deep | Coral | Yellow Cream"></div>
-          </div>
-          <p class="footer-sub">Henrique Viana</p>
-        </div>
-
+    <div aria-hidden="true" class="ticker">
+      <div class="ticker-track">
+        <span>✳ INFELIZMENTE, SEI PROGRAMAR &nbsp; ✧ VONTADE DE TOMAR CAFÉ &nbsp; ✳ FUNCIONA NO MEU PC &nbsp; ✧ FEDORA MAIOR LINUX DO MUNDO &nbsp; </span>
+        <span>✳ INFELIZMENTE, SEI PROGRAMAR &nbsp; ✧ VONTADE DE TOMAR CAFÉ &nbsp; ✳ FUNCIONA NO MEU PC &nbsp; ✧ FEDORA MAIOR LINUX DO MUNDO &nbsp; </span>
+        <span>✳ INFELIZMENTE, SEI PROGRAMAR &nbsp; ✧ VONTADE DE TOMAR CAFÉ &nbsp; ✳ FUNCIONA NO MEU PC &nbsp; ✧ FEDORA MAIOR LINUX DO MUNDO &nbsp; </span>
       </div>
     </div>
+
+    <section class="section about" id="sobre">
+      <div class="section-heading reveal">
+        <span class="section-index">01 / O PERSONAGEM</span>
+        <h2>Por trás do <em>código.</em> <span>✧</span></h2>
+        <p>Um pouco sobre quem está construindo tudo isso.</p>
+      </div>
+      <div class="about-grid">
+        <div class="about-visual reveal">
+          <div class="about-frame">
+            <div class="about-sigil">✳</div>
+            <div class="about-rings"></div>
+            <span class="about-motto">CREATE / EXPLORE / REPEAT</span>
+          </div>
+          <span class="about-note">HENRIWUE / FULL STACK ↗</span>
+        </div>
+        <div class="about-content reveal">
+          <span class="small-tag">[ PRAZER, HENRIQUE ]</span>
+          <p class="about-lead">Desenvolvo aplicações web que unem <strong>soluções práticas, tecnologia e personalidade.</strong></p>
+          <p>Sou desenvolvedor Full Stack com afinidade por PHP, Laravel e JavaScript. Trabalho com sistemas web, APIs e interfaces, aproveitando também minha experiência com design para construir experiências mais completas.</p>
+          <p>Curso Engenharia de Software na UniCesumar e tenho formação técnica em Informática pelo IFPR. Estou disponível para projetos, freelas, desenvolvimento de sistemas web e consultorias.</p>
+          <div class="interests">
+            <span>⌘ full stack</span>
+            <span>✦ UI design</span>
+            <span>♜ sistemas web</span>
+            <span>☕ café</span>
+          </div>
+          <a class="inline-link" href="#contato">TEM UMA IDEIA? VAMOS CONVERSAR ↗</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section projects" id="projetos">
+      <div class="section-heading reveal">
+        <span class="section-index">02 / MISSÕES CONCLUÍDAS</span>
+        <h2>Projetos em <em>destaque.</em> <span>✳</span></h2>
+        <p>Experimentos, produtos e ideias que ganharam forma.</p>
+      </div>
+      <div aria-label="Filtrar projetos" class="filters reveal" role="group">
+        <button aria-pressed="true" class="filter active" data-filter="all">todos ✦</button>
+        <button aria-pressed="false" class="filter" data-filter="app">aplicações</button>
+        <button aria-pressed="false" class="filter" data-filter="web">websites</button>
+        <button aria-pressed="false" class="filter" data-filter="lab">laboratório</button>
+      </div>
+      <div class="project-grid">
+        <article class="project-card reveal" data-category="app">
+          <div class="project-cover cover-auvren">
+            <div class="mock-window">
+              <div class="mock-bar">
+                <span>● ● ●</span>
+                <small>auvren / dashboard</small>
+              </div>
+              <div class="mock-layout">
+                <div class="mock-sidebar">✳<br/>▤<br/>◈<br/>⚙</div>
+                <div class="mock-main">
+                  <small>VISÃO GERAL</small>
+                  <strong>Bem-vindo de volta.</strong>
+                  <div class="mock-metrics">
+                    <span><b>128</b> chamados</span>
+                    <span><b>94%</b> resolvidos</span>
+                  </div>
+                  <div class="mock-bars"><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+                </div>
+              </div>
+            </div>
+            <span class="cover-badge">PROJETO 01 ↗</span>
+          </div>
+          <div class="project-details">
+            <div class="project-meta">APLICAÇÃO WEB / IA <span>2026</span></div>
+            <h3>Auvren <span>↗</span></h3>
+            <p>Plataforma de gestão de chamados internos com triagem automatizada por IA, controle de acesso por perfis, acompanhamento de solicitações e dashboards de atendimento.</p>
+            <div class="tags">
+              <span>Python</span>
+              <span>FastAPI</span>
+              <span>React</span>
+              <span>TypeScript</span>
+              <span>PostgreSQL</span>
+              <span>Gemini AI</span>
+              <span>Docker</span>
+            </div>
+            <a class="project-link" href="https://github.com/henriwueViana/Auvren" rel="noopener noreferrer" target="_blank">VER REPOSITÓRIO ↗</a>
+          </div>
+        </article>
+
+        <article class="project-card reveal" data-category="app">
+          <div class="project-cover cover-verdant">
+            <div class="mock-landing">
+              <div class="landing-nav">KITCHO <span>☰</span></div>
+              <div class="landing-emblem">✳</div>
+              <div class="landing-title">pedidos<br/><em>em tempo real.</em></div>
+              <div class="landing-pill">gestão de restaurantes ↗</div>
+            </div>
+            <span class="cover-badge">PROJETO 02 ↗</span>
+          </div>
+          <div class="project-details">
+            <div class="project-meta">SAAS / RESTAURANTES <span>2026</span></div>
+            <h3>Kitcho SaaS <span>↗</span></h3>
+            <p>Sistema de gestão de cardápios e pedidos em tempo real para restaurantes e estabelecimentos.</p>
+            <div class="tags">
+              <span>Laravel</span>
+              <span>PostgreSQL</span>
+              <span>Node.js</span>
+            </div>
+            <a class="project-link" href="https://github.com/henriwueViana/kitcho-saas.git" rel="noopener noreferrer" target="_blank">VER REPOSITÓRIO ↗</a>
+          </div>
+        </article>
+
+        <article class="project-card reveal" data-category="web">
+          <div class="project-cover cover-atlas">
+            <div class="atlas-card">
+              <div class="atlas-top">COMPARTILHE ✦</div>
+              <div class="atlas-compass">
+                <img src="img/teste.svg" width="150"/>
+              </div>
+              <div class="atlas-bottom">MODA CIRCULAR / IFPR</div>
+            </div>
+            <span class="cover-badge">PROJETO 03 ↗</span>
+          </div>
+          <div class="project-details">
+            <div class="project-meta">PLATAFORMA WEB / TCC <span>2025</span></div>
+            <h3>ComPartilhe <span>↗</span></h3>
+            <p>Plataforma de gestão de feiras de trocas, moeda social e doações, desenvolvida como projeto de conclusão de curso no IFPR.</p>
+            <div class="tags">
+              <span>Laravel</span>
+              <span>PHP</span>
+              <span>MySQL</span>
+              <span>Tailwind</span>
+            </div>
+            <a class="project-link" href="https://github.com/henriwueViana/compartilhe-tcc.git" rel="noopener noreferrer" target="_blank">VER REPOSITÓRIO ↗</a>
+          </div>
+        </article>
+      </div>
+      <p class="empty" hidden="">Nenhum projeto nesta categoria ainda.</p>
+    </section>
+
+    <section class="section skills" id="habilidades">
+      <div class="section-heading reveal">
+        <span class="section-index">03 / INVENTÁRIO</span>
+        <h2>Minha caixa de <em>ferramentas.</em> <span>✦</span></h2>
+        <p>Tecnologias que uso para tirar ideias do papel.</p>
+      </div>
+      <div class="skill-grid">
+        <div class="skill-tile reveal">
+          <span class="skill-number">01 /</span>
+          <div class="skill-glyph">⌘</div>
+          <h3>Front-end</h3>
+          <p>HTML5 · CSS3 · JavaScript · TypeScript · React · Vite · Tailwind · TanStack Query · Zustand · React Router · Axios · Sass · Livewire · Figma · UI Design</p>
+        </div>
+        <div class="skill-tile reveal">
+          <span class="skill-number">02 /</span>
+          <div class="skill-glyph">{ }</div>
+          <h3>Back-end</h3>
+          <p>PHP · Laravel · Python · FastAPI · SQLAlchemy · Alembic · Pydantic · Node.js · Java · C/C++/C# · Flutter/Dart · REST APIs · JWT · RBAC · Gemini API · LLMs · Automação</p>
+        </div>
+        <div class="skill-tile reveal">
+          <span class="skill-number">03 /</span>
+          <div class="skill-glyph">▤</div>
+          <h3>Dados</h3>
+          <p>PostgreSQL · MySQL · MariaDB · Firebase · Redis · SQL · Modelagem Relacional · Migrations · ORM</p>
+        </div>
+        <div class="skill-tile reveal">
+          <span class="skill-number">04 /</span>
+          <div class="skill-glyph">✧</div>
+          <h3>DevOps &amp; testes</h3>
+          <p>Git · GitHub · Linux · Fedora · Docker · Docker Compose · VS Code · Postman · Composer · Pytest · Testes Automatizados · Testes de API · Testes Funcionais · CI/CD · GitHub Copilot</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section skills" id="formacao">
+      <div class="section-heading reveal">
+        <span class="section-index">04 / JORNADA</span>
+        <h2>Minha <em>formação.</em> <span>✧</span></h2>
+        <p>Os caminhos que ajudaram a construir minha base técnica.</p>
+      </div>
+      <div class="skill-grid">
+        <div class="skill-tile reveal">
+          <span class="skill-number">2026 / CURSANDO</span>
+          <div class="skill-glyph">
+            <img src="img/Unicesumar.svg" width="50"/>
+          </div>
+          <h3>Engenharia de Software</h3>
+          <p>UniCesumar · Bacharelado. Arquitetura de software, requisitos, testes automatizados, governança de TI e sistemas distribuídos.</p>
+        </div>
+        <div class="skill-tile reveal">
+          <span class="skill-number">2023 / CONCLUÍDO</span>
+          <div class="skill-glyph">
+            <img src="img/ifpr.png" width="50"/>
+          </div>
+          <h3>Técnico em Informática</h3>
+          <p>Instituto Federal do Paraná (IFPR) · Curso técnico integrado. Programação, algoritmos, redes, suporte e projeto final de desenvolvimento web.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact" id="contato">
+      <div class="contact-spark spark-left">✧</div>
+      <div class="contact-spark spark-right">✳</div>
+      <div class="contact-inner reveal">
+        <span class="section-index">05 / PRÓXIMA AVENTURA</span>
+        <h2>Vamos criar<br/>algo <em>incrível?</em></h2>
+        <p>Tem um projeto em mente, uma oportunidade ou só quer trocar uma ideia? Minha caixa de entrada está aberta.</p>
+        <a class="button contact-button" href="mailto:alexandreh4564@gmail.com">ENVIAR MENSAGEM <span>↗</span></a>
+        <div class="socials">
+          <a href="https://github.com/henriwueViana" rel="noopener noreferrer" target="_blank">GITHUB ↗</a>
+          <a href="https://linkedin.com/in/henrique-viana-440356444/" rel="noopener noreferrer" target="_blank">LINKEDIN ↗</a>
+          <a href="mailto:alexandreh4564@gmail.com">E-MAIL ↗</a>
+          <a href="https://wa.me/55041996465348" rel="noopener noreferrer" target="_blank">WHATSAPP ↗</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <span>✳ HENRIWUE.DEV</span>
+    <span>ESSE SITE VAI ESTAR NA MINHA LAPIDE · 2026</span>
+    <a href="#inicio">VOLTAR AO TOPO ↑</a>
   </footer>
 
-  <script src="js/script.js"></script>
-  <script src="js/tetris.js"></script>
+  
+<a
+    href="https://wa.me/5541996465348"
+    class="magic-button whatsapp-button"
+    target="_blank"
+    rel="noopener noreferrer"
+    aria-label="Conversar comigo no WhatsApp"
+    title="Me chama no WhatsApp!"
+>
+    <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="28"
+        height="28"
+        viewBox="0 0 24 24"
+        fill="currentColor"
+        aria-hidden="true"
+    >
+        <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.966-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.198-.347.223-.644.075-.297-.149-1.255-.463-2.39-1.475-.883-.788-1.48-1.76-1.653-2.057-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.496.099-.198.05-.372-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.372-.01-.57-.01-.198 0-.52.074-.792.372-.273.297-1.04 1.016-1.04 2.479s1.065 2.875 1.213 3.073c.149.198 2.095 3.2 5.076 4.487.709.306 1.262.489 1.693.625.712.227 1.36.195 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.446 7.443h-.004a9.856 9.856 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.002-5.447 4.434-9.879 9.885-9.879a9.82 9.82 0 0 1 6.99 2.895 9.825 9.825 0 0 1 2.89 6.993c-.003 5.448-4.435 9.883-9.881 9.883m8.413-18.297A11.815 11.815 0 0 0 12.026 0C5.495 0 .179 5.316.176 11.849c-.001 2.089.545 4.128 1.584 5.927L.077 23.923l6.291-1.65a11.86 11.86 0 0 0 5.654 1.44h.005c6.531 0 11.848-5.316 11.851-11.849a11.82 11.82 0 0 0-3.439-8.336Z"/>
+    </svg>
+</a>
+
 </body>
 </html>
